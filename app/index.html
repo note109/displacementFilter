@@ -12,6 +12,29 @@
 </head>
 <body>
 
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="image"></div>
+      <b class="plus"> + </b>
+      <div class="square-no-filter"></div>
+    </div>
+
+    <div class="square">
+    </div>
+
+    <svg width="200" height="200" viewBox="0 0 220 220"
+         xmlns="http://www.w3.org/2000/svg">
+
+      <filter id="displacement">
+        <feImage xlink:href="../dest/red.png" x="0" y="0" width="200" height="200" result="img"/>
+        <feDisplacementMap in2="img" in="SourceGraphic"
+            scale="50" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+    </svg>
+
+  </div>
 
 </body>
 </html>

@@ -1,3 +1,32 @@
 body {
   margin: 0;
   padding: 0; }
+
+.wrapper {
+  transform: translate(50%, 50%);
+  margin-left: -200px;
+  margin-top: -100px; }
+
+.header {
+  display: flex;
+  align-items: center; }
+  .header .image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url("../dest/red.png"); }
+  .header .plus {
+    font-size: 32px;
+    margin: 0 20px; }
+  .header .square-no-filter {
+    width: 100px;
+    height: 100px;
+    background-color: #000; }
+
+.square {
+  margin-top: 50px;
+  margin-left: 50px;
+  filter: url("#displacement");
+  width: 100px;
+  height: 100px;
+  background-color: #000; }
